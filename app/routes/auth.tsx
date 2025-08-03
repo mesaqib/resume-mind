@@ -20,15 +20,15 @@ export const meta: Route.MetaFunction = () => {
       content: "Scan your resume for ATS optimization. Make your resume job-ready!",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://resume-info.com" }, // Replace with your domain
-    { property: "og:image", content: "https://resume-info.com/og-image.png" }, // Replace with real image URL
+    { property: "og:url", content: "https://resumind.xyz" }, // Replace with your domain
+    { property: "og:image", content: "https://resumind.xyz/og-image.png" }, // Replace with real image URL
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: "Resume-info | ATS Resume Checker" },
     {
       name: "twitter:description",
       content: "Optimize your resume and improve your job search success!",
     },
-    { name: "twitter:image", content: "https://resume-info.com/twitter-image.png" }, // Replace with real image
+    { name: "twitter:image", content: "https://resumind.xyz/twitter-image.png" }, // Replace with real image
   ];
 };
 

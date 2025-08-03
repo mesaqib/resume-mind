@@ -22,15 +22,15 @@ export const meta: MetaFunction = () => [
   { property: "og:type", content: "website" },
   { property: "og:title", content: "Free ATS Resume Checker | Optimize Your Resume with AI" },
   { property: "og:description", content: "Analyze your resume and optimize it for ATS systems. Fast, accurate, and completely free." },
-  { property: "og:url", content: "https://yourdomain.com" },
-  { property: "og:image", content: "https://yourdomain.com/images/og-image.jpg" }, // Add a real image
+  { property: "og:url", content: "https://resumind.xyz" },
+  { property: "og:image", content: "https://resumind.xyz/images/og-image.jpg" }, // Add a real image
   { property: "og:site_name", content: "ATS Resume Checker" },
 
   // Twitter Cards
   { name: "twitter:card", content: "summary_large_image" },
   { name: "twitter:title", content: "Free ATS Resume Checker | Optimize Your Resume with AI" },
   { name: "twitter:description", content: "Instant resume scanning and optimization using AI." },
-  { name: "twitter:image", content: "https://yourdomain.com/images/twitter-image.jpg" },
+  { name: "twitter:image", content: "https://resumind.xyz/images/twitter-image.jpg" },
   { name: "twitter:site", content: "@yourhandle" },
 
   // Theme
