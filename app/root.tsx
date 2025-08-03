@@ -9,9 +9,10 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import {usePuterStore} from "~/lib/puter";
-import {useEffect} from "react";
+import { usePuterStore } from "~/lib/puter";
+import { useEffect } from "react";
 
+// SEO: Provide global links like fonts
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -25,18 +26,28 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+// SEO: Global meta
+export const meta: Route.MetaFunction = () => [
+  { charset: "utf-8" },
+  { title: "AI Resume Analyzer - Smart Resume Review Tool" },
+  {
+    name: "description",
+    content:
+      "Our free and fast ATS resume grader relies on algorithms developed by reading 2 000 000 resumes and Open AI's ChatGPT large language model. It will give you the answer in just 3 minutes!",
+  },
+  { name: "viewport", content: "width=device-width, initial-scale=1" },
+];
+
 export function Layout({ children }: { children: React.ReactNode }) {
   const { init } = usePuterStore();
 
   useEffect(() => {
-    init()
+    init();
   }, [init]);
 
   return (
     <html lang="en">
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
       </head>
@@ -65,7 +76,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
       error.status === 404
         ? "The requested page could not be found."
         : error.statusText || details;
-  } else if (import.meta.env.DEV && error && error instanceof Error) {
+  } else if (import.meta.env.DEV && error instanceof Error) {
     details = error.message;
     stack = error.stack;
   }

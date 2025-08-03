@@ -6,9 +6,22 @@ import ATS from "~/components/ATS";
 import Details from "~/components/Details";
 
 export const meta = () => ([
-    { title: 'Resumind | Review ' },
-    { name: 'description', content: 'Detailed overview of your resume' },
+  { title: 'Resumind | Resume Review' },
+  { name: 'description', content: 'Get a detailed ATS compatibility review of your resume and boost your chances of landing interviews.' },
+  { name: 'keywords', content: 'ATS resume check, resume score, resume review, job application, resume optimization' },
+  { name: 'robots', content: 'index, follow' },
+  { name: 'author', content: 'Resumind Team' },
+  { property: 'og:title', content: 'Resumind | Resume Review Results' },
+  { property: 'og:description', content: 'Instantly analyze your resume’s ATS performance and get actionable feedback.' },
+  { property: 'og:type', content: 'website' },
+  { property: 'og:url', content: 'https://resumind.in/review' }, // Replace with your actual domain
+  { property: 'og:image', content: 'https://resumind.in/og-image.png' }, // Replace with actual image
+  { name: 'twitter:card', content: 'summary_large_image' },
+  { name: 'twitter:title', content: 'Resumind | Resume Review Results' },
+  { name: 'twitter:description', content: 'Get a detailed ATS compatibility report of your resume instantly.' },
+  { name: 'twitter:image', content: 'https://resumind.in/twitter-image.png' }, // Replace with actual image
 ])
+
 
 const Resume = () => {
     const { auth, isLoading, fs, kv } = usePuterStore();

@@ -79,6 +79,9 @@ form {
   @apply bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 rounded-full   cursor-pointer w-[350px] h-[40px] flex items-center justify-center max-md:w-full text-xl font-semibold text-white;
 }
 
+ .auth-button1 {
+  @apply bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 rounded-full   cursor-pointer w-full h-[40px] flex items-center justify-center max-md:w-full text-xl font-semibold text-white;
+}
   .main-section {
     @apply flex flex-col items-center gap-8 pt-12 mx-15 pb-5;
   }
